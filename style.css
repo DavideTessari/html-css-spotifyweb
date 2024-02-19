@@ -6,14 +6,12 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
-}
-
-ul {
-    list-style: none;
 }
 
 /* ----------------
@@ -38,16 +36,107 @@ ul {
     BUTTONS
 -------------------*/
 .btn {
-    border-radius: 20px;
-    border-color: transparent;
-    padding: 5px 10px;
+    
 }
 
 /*------------------
-    HEADER
+    NAV BAR
 -------------------*/
+aside {
+    background-color: black;
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 250px;
+    height: 100vh;
+    padding: 25px;
+    line-height: 2.5;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+aside .logo {
+    max-width: 140px;
+    margin-bottom: 25px;
+}
 
+aside .square {
+    width: 36px;
+    height: 36px;
+    background-color: #a3a3a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
+}
+  
+aside .square i {
+    color: black;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+aside li {
+    color: #717171;
+    display: flex;
+    gap: 5px;
+}
+
+aside .row p {
+    line-height: 36px;
+    color: #717171;
+    margin-left: 10px;
+}
+
+aside .home, .search, .library img { 
+    max-width: 14%;
+}
+
+aside .playlist h4 { 
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+aside .space li:first-child {
+    margin-top: 20px;
+}
+
+aside .instal img {
+    width: 18px;
+} 
+
+aside .instal {
+    display: flex;
+    color: #717171;
+    gap: 5px;
+}  
+
+aside hr {
+    border-color: #717171;
+    margin-bottom: 10px;
+    width: 180%;
+}
+
+aside .profile img {
+    width: 25px;
+    height: 25px;
+    background-color: #808080;
+    border-radius: 50%;
+} 
+
+aside .profile {
+    display: flex;
+    gap: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+} 
+
+aside .name {
+    position: absolute;
+    bottom: 5px;
+}
 /*-------------------
      RESPONSIVE
 -------------------*/
