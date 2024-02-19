@@ -32,11 +32,26 @@ img {
     padding: 0 10px;
 }
 
+main {
+    height: calc(100vh - 90px);
+    width: 100% - 400px;
+    overflow-y: auto;
+    background-color: #141922;
+}
+
 /*-------------------
     BUTTONS
 -------------------*/
-.btn {
-    
+button {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 35px;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 /*------------------
@@ -44,13 +59,18 @@ img {
 -------------------*/
 aside {
     background-color: black;
-    max-width: 240px;
+    width: 240px;
     height: 100vh;
     padding: 25px;
     line-height: 2.5;
     position: relative;
     font-size: 14px;
     font-weight: bold;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 aside .logo {
@@ -137,7 +157,7 @@ aside .home, .search, .library img{
 }
 
 aside .home, .search, .library img { 
-    max-width: 13%;
+    max-width: 25px;
     display: flex;
 }
 
@@ -164,7 +184,7 @@ aside .instal {
 aside hr {
     border-color: #717171;
     margin-bottom: 10px;
-    width: 170%;
+    width: 190px;
 }
 
 aside .profile img {
@@ -217,11 +237,12 @@ aside .name {
 
     aside .logo-query {
         display: block;
-        width: 14%;
+        width: 25px;
     }
 
     aside {
         padding: 15px;
+        width: 55px;
     }
 
     aside .search img {
@@ -235,6 +256,25 @@ aside .name {
     aside .instal {
         margin-left: 2px;
     }
+}
 
+/*------------------
+   HEADER
+-------------------*/
+header {
+    background-color: #080b12;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
 
+/*------------------
+   NAV
+-------------------*/
+main nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: white;
 }
