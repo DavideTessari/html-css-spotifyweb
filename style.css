@@ -44,7 +44,7 @@ img {
 -------------------*/
 aside {
     background-color: black;
-    max-width: 250px;
+    max-width: 240px;
     height: 100vh;
     padding: 25px;
     line-height: 2.5;
@@ -56,6 +56,10 @@ aside {
 aside .logo {
     max-width: 140px;
     margin-bottom: 25px;
+}
+
+aside .logo-query {
+    display: none;
 }
 
 aside .square {
@@ -89,10 +93,10 @@ aside .row p {
 aside .home::before { 
     content: "";
     position: absolute;
-    top: 110px;
+    top: 108px;
     left: 0px;
-    width: 4px; 
-    height: 25px; 
+    width: 5px; 
+    height: 30px; 
     background-color: #adff2f;
     opacity: 0;
     transition: 0.3s;
@@ -101,10 +105,10 @@ aside .home::before {
 aside .search::before { 
     content: "";
     position: absolute;
-    top: 145px;
+    top: 143px;
     left: 0px;
-    width: 4px; 
-    height: 25px; 
+    width: 5px; 
+    height: 30px; 
     background-color: #adff2f;
     opacity: 0;
     transition: 0.3s;
@@ -113,10 +117,10 @@ aside .search::before {
 aside .library::before { 
     content: "";
     position: absolute;
-    top: 180px;
+    top: 178px;
     left: 0px;
-    width: 4px; 
-    height: 25px; 
+    width: 5px; 
+    height: 30px; 
     background-color: #adff2f;
     opacity: 0;
     transition: 0.3s;
@@ -133,7 +137,7 @@ aside .home, .search, .library img{
 }
 
 aside .home, .search, .library img { 
-    max-width: 14%;
+    max-width: 13%;
     display: flex;
 }
 
@@ -160,7 +164,7 @@ aside .instal {
 aside hr {
     border-color: #717171;
     margin-bottom: 10px;
-    width: 180%;
+    width: 170%;
 }
 
 aside .profile img {
@@ -180,13 +184,13 @@ aside .profile {
 
 aside .name {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
 }
 
 /*-------------------
      RESPONSIVE
 -------------------*/
-@media screen and (max-width: 1100px){
+/* @media screen and (max-width: 1100px){
     header ul  {
         display: none;
     }
@@ -204,14 +208,33 @@ aside .name {
     #bars {
         display: block;
     }
-}
+} */
 
 @media screen and (max-width: 600px){
-    header ul  {
+    aside .playlist, p, hr, .logo {
         display: none;
     }
 
-    #bars {
+    aside .logo-query {
         display: block;
+        width: 14%;
     }
+
+    aside {
+        padding: 15px;
+    }
+
+    aside .search img {
+        margin: 10px 0;
+    }
+
+    aside .profile img {
+        margin-top: 20px;
+    }
+
+    aside .instal {
+        margin-left: 2px;
+    }
+
+
 }
