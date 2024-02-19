@@ -44,8 +44,6 @@ img {
 -------------------*/
 aside {
     background-color: black;
-    /* display: flex;
-    flex-direction: column; */
     max-width: 250px;
     height: 100vh;
     padding: 25px;
@@ -88,8 +86,55 @@ aside .row p {
     margin-left: 10px;
 }
 
+aside .home::before { 
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    width: 4px; 
+    height: 25px; 
+    background-color: #adff2f;
+    opacity: 0;
+    transition: 0.3s;
+}
+  
+aside .search::before { 
+    content: "";
+    position: absolute;
+    top: 145px;
+    left: 0px;
+    width: 4px; 
+    height: 25px; 
+    background-color: #adff2f;
+    opacity: 0;
+    transition: 0.3s;
+}
+  
+aside .library::before { 
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    width: 4px; 
+    height: 25px; 
+    background-color: #adff2f;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+aside .home:hover::before, .search:hover::before, .library:hover::before {
+    opacity: 1;
+}
+  
+aside .home, .search, .library img{ 
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+
 aside .home, .search, .library img { 
     max-width: 14%;
+    display: flex;
 }
 
 aside .playlist h4 { 
@@ -137,6 +182,7 @@ aside .name {
     position: absolute;
     bottom: 5px;
 }
+
 /*-------------------
      RESPONSIVE
 -------------------*/
