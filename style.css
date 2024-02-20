@@ -24,13 +24,8 @@ img {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
-}
-
-.col {
-    padding: 0 10px;
 }
 
 main {
@@ -54,6 +49,9 @@ button {
     font-size: 12px;
 }
 
+button:hover {
+    padding: 15px 45px;
+}
 /*------------------
     NAV BAR
 -------------------*/
@@ -70,7 +68,6 @@ aside {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 aside .logo {
@@ -91,6 +88,10 @@ aside .square {
     justify-content: center;
     margin-left: 11px;
 }
+
+aside .square:hover {
+    background-color: white;
+}
   
 aside .square i {
     color: black;
@@ -104,10 +105,19 @@ aside li {
     gap: 5px;
 }
 
-aside .row p {
+aside li:hover {
+    color: white;
+}
+
+aside p {
     line-height: 36px;
     color: #717171;
     margin-left: 10px;
+}
+
+aside p:hover {
+    color: white;
+    font-weight: bold;
 }
 
 aside .home::before { 
@@ -192,6 +202,7 @@ aside .profile img {
     height: 25px;
     background-color: #808080;
     border-radius: 50%;
+    margin-top: 5px;
 } 
 
 aside .profile {
@@ -236,6 +247,18 @@ aside .name {
     aside .instal {
         margin-left: 2px;
     }
+
+    aside .home::before { 
+        top: 50px;
+    }
+      
+    aside .search::before { 
+        top: 85px;
+    }
+      
+    aside .library::before { 
+        top: 120px;
+    }
 }
 
 /*------------------
@@ -262,10 +285,14 @@ main nav ul {
     font-size: 14px;
 }
 
+main nav li:hover {
+    color: white;
+}
+
 main .box {
     padding: 10px;
     max-width: 265px;
-    height: auto;
+    min-height: 265px;
     text-align: center;
     position: relative;
 }
@@ -320,15 +347,23 @@ main .box i {
      RESPONSIVE
 -------------------*/
 @media screen and (max-width: 1100px){
-    
+    main .row {
+        flex-wrap: wrap;
+    }
+
+    main .box {
+        width: 50%;
+    }
 }
 
+
 @media screen and (max-width: 700px){
-    
 }
 
 @media screen and (max-width: 600px){
-    
+    main .container {
+        margin-left: 70px;
+    }
 }
 
 /*------------------
@@ -348,7 +383,7 @@ footer img {
     max-width: 35px;
 }
 
-footer  .left {
+footer .left {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -364,19 +399,60 @@ footer h5 {
     color: white;
 }
 
-footer i {
+footer .left i {
     color: #717171;
     font-size: 15px;
     margin-left: 10px;
+}
+
+footer .left i:hover {
+    color: white;
 }
 
 footer  .center i, .rigth i {
     color: white;
 }
 
-footer  .center i:nth-child(3) {
+footer .center i {
+    margin: 0 10px;
+}
+
+footer .rigth i {
+   font-size: 11px;
+}
+
+footer .center i:nth-child(3) {
     font-size: 25px;
     vertical-align: middle;
+    margin: 0 10px;
+}
+
+footer .bar {
+    height: 3px; 
+    background-color: #717171;
+    width: 90px;
+}
+
+footer .bar-inside {
+    height: 3px; 
+    background-color: white;
+    width: 20%;
+}
+
+footer .rigth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*-------------------
+     RESPONSIVE
+-------------------*/
+@media screen and (max-width: 700px){
+    footer .left .favicon {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 
