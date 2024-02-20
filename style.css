@@ -18,7 +18,8 @@ img {
     GENERAL
 ---------------- */ 
 .container {
-    
+    margin-left: 255px;
+    margin-right: 15px;
 }
 
 .row {
@@ -75,7 +76,7 @@ aside {
 
 aside .logo {
     max-width: 140px;
-    margin-bottom: 25px;
+    margin-bottom: 47px;
 }
 
 aside .logo-query {
@@ -210,26 +211,6 @@ aside .name {
 /*-------------------
      RESPONSIVE
 -------------------*/
-/* @media screen and (max-width: 1100px){
-    header ul  {
-        display: none;
-    }
-
-    #bars {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 700px){
-    header ul  {
-        display: none;
-    }
-
-    #bars {
-        display: block;
-    }
-} */
-
 @media screen and (max-width: 600px){
     aside .playlist, p, hr, .logo {
         display: none;
@@ -269,12 +250,99 @@ header {
 }
 
 /*------------------
-   NAV
+     MAIN
 -------------------*/
 main nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    color: white;
+    gap: 20px;
+    color: #717171;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 14px;
 }
+
+main .box {
+    padding: 10px;
+    max-width: 265px;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+main .container h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+main .container h4 {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+main .container p {
+    font-weight: bold;
+    color: #717171;
+    font-size: 13px;
+}
+
+main .circle img {
+    width: 265px;
+    height: 265px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+main .box i {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white; 
+    opacity: 0;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.box:hover i {
+    opacity: 1;
+}
+
+/*-------------------
+     RESPONSIVE
+-------------------*/
+@media screen and (max-width: 1100px){
+    
+}
+
+@media screen and (max-width: 700px){
+    
+}
+
+@media screen and (max-width: 600px){
+    
+}
+
+/*------------------
+     FOOTER
+-------------------*/
+
+
+
+
+
+
+
+
+
+
+
