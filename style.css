@@ -370,6 +370,14 @@ footer i {
     margin-left: 10px;
 }
 
+footer  .center i, .rigth i {
+    color: white;
+}
+
+footer  .center i:nth-child(3) {
+    font-size: 25px;
+    vertical-align: middle;
+}
 
 
 
