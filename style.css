@@ -471,6 +471,14 @@ footer .bar-inside {
     height: 3px; 
     background-color: white;
     width: 20%;
+    position: relative;
+}
+
+footer .bar-inside i {
+    position: absolute;
+    top: -3px;
+    left: 12px;
+    opacity: 0;
 }
 
 footer .bar-inside:hover {
@@ -496,6 +504,18 @@ footer .bar-inside-center {
     height: 3px; 
     background-color: white;
     width: 20%;
+    position: relative;
+}
+
+footer .bar-inside-center i {
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    opacity: 0;
+}
+
+footer .bar-inside-center i:hover, .bar-inside i:hover {
+    opacity: 1;
 }
 
 footer .bar-inside-center:hover {
