@@ -245,6 +245,10 @@ aside .playlist {
         margin-top: 20px;
     }
 
+    aside .name {
+        margin-top: 650px;
+    }
+
     aside .instal {
         margin-left: 2px;
     }
