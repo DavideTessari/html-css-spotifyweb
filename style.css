@@ -527,4 +527,8 @@ footer .bar-inside-center:hover {
     footer .rigth {
         gap: 10px;
     }
+
+    footer .bar-center {
+        width: 130px;
+    }
 }
