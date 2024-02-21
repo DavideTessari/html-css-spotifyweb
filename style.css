@@ -295,7 +295,6 @@ main .box {
     max-width: 265px;
     min-height: 265px;
     text-align: center;
-    position: relative;
 }
 
 main .container h1 {
@@ -326,9 +325,13 @@ main .circle img {
     margin-right: 20px;
 }
 
-main .box i {
+main .box-img {
+    position: relative;
+}
+
+main .box-img i {
     position: absolute;
-    top: 36%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
@@ -336,11 +339,11 @@ main .box i {
     opacity: 0;
 }
 
-.box:hover {
+.box-img:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
   
-.box:hover i {
+.box-img:hover i {
     opacity: 1;
 }
 
