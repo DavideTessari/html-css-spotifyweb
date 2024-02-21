@@ -5,7 +5,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -33,7 +32,12 @@ main {
     overflow: auto;
     background-color: #141922;
 }
-
+/*-------------------
+    TYPOGRAPHY
+-------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
+}
 /*-------------------
     BUTTONS
 -------------------*/
@@ -314,7 +318,6 @@ main nav li:hover {
       transform: translateX(0);
     }
 }
-  
 .moveAnimation {
     animation: moveRight 1.5s ease-in-out;
 }
@@ -371,6 +374,8 @@ main .box-img i, .box-circle i {
 .box-img:hover {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.7;
+    transition: 0.4s ease-in-out;
+    transform: translateY(10px);
 }
 
 .box-circle:hover {
